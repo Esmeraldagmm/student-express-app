@@ -7,7 +7,7 @@ const cors = require("cors"); // for cors
 app.use(bodyParser.json()); // required to create a post
 app.use(cors()); // for cors
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const prisma = new PrismaClient(); // for prisma
 
